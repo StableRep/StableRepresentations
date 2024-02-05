@@ -1,0 +1,20 @@
+name: stable_rep
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pytorch=2.0.0
+  - pytorch-cuda=11.8
+  - torchvision
+  - pip
+  - pip:
+    - accelerate>=0.16.0
+    - transformers>=4.25.1
+    - datasets
+    - Jinja2
+    - ftfy
+    - xformers
+    - git+https://github.com/cloneofsimo/lora.git
+    - git+https://github.com/microsoft/LoRA
